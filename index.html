@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>England Duck Counter</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>In 2022, England Have had a total of:</h1>
+            <h1 style="font-size:72" id="DuckCount">X Ducks</H1>
+            <h2>Ducks in Test Match Cricket</h2>
+        </center>
+ 
+<table id="QuackCounter">
+	<tr class="header">
+		<th><b>Player</b></th>
+		<th><b>Match</b></th>
+		<th><b>Method</b></th>
+		<th><b>Balls Faced</b></th>
+	</tr>
+    <tr style="background-color: gold;"><td>Ollie Robinson</td><td>Ashes 5th Test (2nd)</td><td>b. Cummins</td><td>1</tr>
+    <tr><td>Stuart Broad</td><td>Ashes 5th Test (1st)</td><td>b. Starc</td><td>4</tr>
+    <tr><td>Rory Burns</td><td>Ashes 5th Test (1st)</td><td>run out (Labuschagne)</td><td>6</tr>
+    <tr><td>Mark Wood</td><td>Ashes 4th Test (2nd)</td><td>lbw b. Cummins</td><td>2</tr>
+    <tr><td>Jos Buttler</td><td>Ashes 4th Test (1st)</td><td>c. Khawaja b. Cummins</td><td>8</tr>
+    <tr><td>Joe Root</td><td>Ashes 4th Test (1st)</td><td>c. Smith b. Boland</td><td>7</tr>
+    </table>
+    <p>Data manually input from <a href="https://www.bbc.co.uk/sport/cricket/scores-fixtures">BBC Sport</a></p>
+
+</html>
+
+<script>
+    var duckTable = document.getElementById("QuackCounter");
+    var rows = duckTable.rows.length;
+    var ducks = rows-1;
+    document.getElementById("DuckCount").innerHTML = ducks.toString()
+</script>
+
+<style>
+
+#QuackCounter{
+	border-collapse: collapse;
+	width: 100%;
+	border: 5px solid black;
+	font-size:20px;
+}
+
+#QuackCounter tr{
+	border-bottom: 1px solid black;
+    background-color: white;
+}
+#QuackCounter th, #QuackCounter td{
+	text-align: left;
+    color: black;
+	padding: 12px
+}
+a{
+color: white;
+text-decoration: none;
+}
+a:hover{
+background-color:black;
+color:white;
+}
+body {
+  background-image: url('quack.png');
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
